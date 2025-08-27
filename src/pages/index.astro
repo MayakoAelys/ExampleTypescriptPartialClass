@@ -1,4 +1,6 @@
 ---
+import TestButton from "../components/TestButton";
+
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component frontmatter". It never runs in the browser.
 console.log('This runs in your terminal, not the browser!');
@@ -8,10 +10,6 @@ console.log('This runs in your terminal, not the browser!');
 <html>
   <body>
     <h1>Hello, World!</h1>
+    <TestButton client:only />
   </body>
 </html>
-<style>
-  h1 {
-    color: orange;
-  }
-</style>
